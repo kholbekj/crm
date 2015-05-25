@@ -19,7 +19,10 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-#gem 'trailblazer', '0.2.2'
+# Trailblazer
+gem 'trailblazer', '0.2.2'
+gem "cells", "4.0.0.beta2"
+gem "cells-haml", git: "https://github.com/trailblazer/cells-haml"
 
 gem 'rspec-rails'
 
