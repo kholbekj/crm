@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  resource :leads
+  resources :leads
 
-  get 'lead/:id' => 'leads#show', as: 'lead'
+  #get 'lead/:id' => 'leads#show', as: 'lead'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

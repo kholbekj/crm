@@ -2,7 +2,7 @@ class Lead < ActiveRecord::Base
   class Create < Trailblazer::Operation
     include CRUD
     model Lead, :create
-    
+
     contract do
       property :name
       property :phone_number
@@ -16,5 +16,9 @@ class Lead < ActiveRecord::Base
         f.save
       end
     end
+  end
+
+  class Update < Create
+    action :update
   end
 end
